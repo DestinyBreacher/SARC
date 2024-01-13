@@ -1,0 +1,14 @@
+<h1 class="text-center mb-3">TO DO LIST APP</h1>
+<form action="/" method="POST" class="mb-4">
+    <div class="form-group">
+        <label for="task">task</label>
+        <input type="text" name="task" class="form-control">
+    </div>
+    <input type="submit" value="Add Task" class="btn btn-primary btn-block">
+</form>
+<h5>Tasks</h5>
+<ul class="list-group">
+    {{#each mytodo}}
+    <li class="list-group-item">{{this.task}}</li>
+    {{/each}}
+</ul>
